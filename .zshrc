@@ -24,6 +24,8 @@ bindkey "^[[B" history-beginning-search-forward
 
 # Share history between terminal windows
 setopt share_history
+# Turn off annoying BEEPs 
+unsetopt BEEP
 
 # Use colorful ls
 export CLICOLOR=1
