@@ -1,0 +1,6 @@
+[user]
+	name = Josip Cavar
+	email = josipcavar04@gmail.com
+[core]
+    # Enable mouse in git diff
+	pager = less -+FX
