@@ -4,3 +4,16 @@
 [core]
     # Enable mouse in git diff
 	pager = less -+FX
+	excludesfile = ~/.gitignore
+[difftool]
+	prompt = 0
+[diff]
+	tool = vimdiff
+[mergetool]
+	prompt = 0
+[merge]
+	tool = vimdiff
+[init]
+    templatedir = ~/.git_template
+[pull]
+	rebase = true
