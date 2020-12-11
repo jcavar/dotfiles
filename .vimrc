@@ -7,8 +7,8 @@
 " Enable mouse
 :set mouse=a
 
-" Do not show mode as we use airline
-:set noshowmode
+" Show line and column number
+:set ruler
 
 " Autowrite files when switching to avoid annoying splits
 :set autowrite
@@ -72,6 +72,3 @@ function! FormatJSON()
 :%!python -m json.tool
 endfunction
 
-
-" Disabled rules for languagetool with ale.
-let g:ale_languagetool_options='--disable "DASH_RULE,ARROWS,WHITESPACE_RULE,EN_QUOTES"'
