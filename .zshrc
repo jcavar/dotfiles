@@ -48,7 +48,8 @@ unsetopt BEEP
 export CLICOLOR=1
 
 # Prompt
-eval "$(starship init zsh)"
+export PROMPT='%(?.%F{green}❯.%F{red}❯)%f '
+export RPROMPT='%B%F{240}%1~%f%b'
 
 # Fish shell style autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
