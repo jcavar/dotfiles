@@ -25,7 +25,7 @@ todo() {
 # Bind up and down keys to search history back and forward
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
-bindkey '^f' edit-command-line
+bindkey -M vicmd v edit-command-line
 bindkey -v "^?" backward-delete-char
 bindkey -v
 
