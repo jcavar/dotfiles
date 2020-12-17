@@ -2,7 +2,6 @@
 
 " vim -p opens by default max of 10 tabs
 :set tabpagemax=100
-:set spell
 
 " Enable mouse
 :set mouse=a
@@ -35,7 +34,7 @@ set incsearch
 :set history=1000
 set noswapfile
 " Tell vimgrep to ignore some directories 
-:set wildignore+=*/node_modules/**,*/tmp/**
+:set wildignore+=*/node_modules/**,*/tmp/**,*.o,*.img
 
 " Use zsh style autocompletion
 :set wildmenu
