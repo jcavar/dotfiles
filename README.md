@@ -24,3 +24,9 @@ Make symbolic link for easier access to iCloud Directory:
 ```bash
 ln -s /Users/josip04/Library/Mobile\ Documents/com~apple~CloudDocs ~/iCloud
 ```
+
+## OneDark and OneLight for Xcode
+
+https://github.com/MaximBazarov/One-Dark-Xcode
+
+I use font size 17.
