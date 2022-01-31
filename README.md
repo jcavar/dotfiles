@@ -18,7 +18,9 @@ Install plugins:
 git clone git@github.com:joshdick/onedark.vim.git
 git clone git@github.com:godlygeek/tabular.git
 ```
+Install dependencies:
 
+- fzf
 
 Make symbolic link for easier access to iCloud Directory:
 
