@@ -11,6 +11,7 @@
 	tool = vimdiff
 [mergetool]
 	prompt = 0
+	keepBackup = false
 [merge]
 	tool = vimdiff
 [init]
