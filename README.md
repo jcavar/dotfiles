@@ -22,8 +22,9 @@ git clone git@github.com:godlygeek/tabular.git
 ```
 Install dependencies:
 
-- fzf
-brew install zsh-syntax-highlighting
+- brew install fzf
+- brew install zsh-syntax-highlighting
+- brew install rbenv
 
 Make symbolic link for easier access to iCloud Directory:
 
