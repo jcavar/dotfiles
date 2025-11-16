@@ -10,17 +10,20 @@ ln -s $PWD/.zshrc ~/.zshrc
 ln -s $PWD/.gitconfig ~/.gitconfig
 ln -s $PWD/.gitignore ~/.gitignore
 ln -s $PWD/.editrc ~/.editrc
+ln -s $PWD/.git_template/ ~/
 ```
 
 Install plugins:
 
 ```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 git clone git@github.com:joshdick/onedark.vim.git
 git clone git@github.com:godlygeek/tabular.git
 ```
 Install dependencies:
 
 - fzf
+brew install zsh-syntax-highlighting
 
 Make symbolic link for easier access to iCloud Directory:
 

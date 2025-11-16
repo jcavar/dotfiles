@@ -23,8 +23,12 @@ todo() {
 }
 
 # Bind up and down keys to search history back and forward
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
 bindkey -M vicmd v edit-command-line
 bindkey -v "^?" backward-delete-char
 bindkey -v
@@ -54,8 +58,9 @@ export PROMPT='%(?.%F{green}❯.%F{red}❯)%f '
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # As per documentation, this needs to be last line in this file
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Nicer colors for man page
 man() {
 	env \
 		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
